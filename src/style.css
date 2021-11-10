@@ -1,0 +1,382 @@
+/*Global*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+
+/*header*/
+
+header {
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: flex;
+    font-size:18px;
+}
+
+header div {
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+
+/*navbar*/
+
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.menu  {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+li a:hover {
+    background-color: rgba(146, 133, 133, 0.411);
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar ul {
+    margin-right: 100px;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.logo-img {
+    width: 10rem;
+}
+
+/*navbar mobile*/
+
+@media (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+    .navbar-menu {
+        display: flex;  
+    }
+    
+    .navbar-menu li {
+        padding: 10px;
+        margin: 0 50px 0 0;
+        position: relative;
+    }
+    
+    .navbar-menu a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .navbar-menu li ul {
+        display: none;
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+    
+    .navbar-menu li:hover ul {
+        display: block;
+    }
+}
+
+/*home*/
+
+.home {
+    background-image: url(/images/1036497928-huge.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 100px;
+    color: rgb(0, 8, 124);
+}
+
+h2 {
+    font-size: 3rem;
+    color: rgb(0, 8, 124);
+}
+
+/*our services*/
+
+.services {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+}
+
+.service-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hr {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+.service-card {
+    background-color: rgb(255, 255, 254);
+    width: 320px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px rgb(0, 0, 0);
+    margin: 90px 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-img {
+    width: 80%;
+}
+
+/*about uss*/
+
+.about-oss {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-text {
+    width: 35%;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 20px;
+}
+
+.about-text p {
+    font-size: 22px;
+}
+
+.personel {
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.personel p {
+    font-size: 20px;
+}
+
+.persolal-img {
+    width: 40%;
+    text-align: center;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.p-img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+}
+
+
+/*footer*/
+
+footer {
+  
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-parent {
+    width: 1280px;
+    height: 250px;
+    /*border: solid white 1px;*/
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.child-wrap {
+    flex: 0 0 33.333%;
+    /*border: solid white 1px;*/
+    text-align: center;
+}
+
+.child-wrap p {
+    color: white;
+}
+
+.footer-menu div {
+   margin-top: 12px;
+}
+
+.child-wrap a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* Skills */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.skills ul li {
+    position: relative;    
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;    
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.skill.right .skill-image {
+    right: 0;   
+}
+
+.skill.right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;    
+}
+
+.skill.left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;    
+}
+
+.skill-image img {
+    transition: all 1s;    
+}
+
+.skill-image img:hover {
+    transform: scale(1.5);
+}
+
+.page-footer {
+    background: #242424;
+}
+
+/*mobile*/
+
+@media (max-width: 1100px) {
+    .about-oss {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .about-text {
+        margin: 20px;
+        width: 80%;
+    }
+
+    .personel {
+        width: 80%;
+        background-color: grey;
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .persolal-img {
+        width: 60%;
+        text-align: center;
+    }
+
+    .container-parent {
+        width: 1140px;
+        height: 850px;
+       
+        margin: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .child-wrap {
+        height: 250px;
+        width: 600px;
+    }
+    
+}
