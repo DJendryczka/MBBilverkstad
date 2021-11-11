@@ -96,6 +96,7 @@ li a:hover {
 
 .navbar a {
     text-decoration: none;
+    color: black;
 }
 
 .navbar ul {
