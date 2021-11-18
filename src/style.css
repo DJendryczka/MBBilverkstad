@@ -115,39 +115,23 @@ li a:hover {
     width: 10rem;
 }
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
 /*navbar mobile*/
 
-@media (max-width: 680px) {
-    .menu {
-        display: none;
-    }
-    .navbar-menu {
-        display: flex;  
-    }
-    
-    .navbar-menu li {
-        padding: 10px;
-        margin: 0 50px 0 0;
-        position: relative;
-    }
-    
-    .navbar-menu a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .navbar-menu li ul {
-        display: none;
-        position: absolute;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-    }
-    
-    .navbar-menu li:hover ul {
-        display: block;
-    }
-}
+
 
 /*home*/
 
@@ -259,6 +243,7 @@ h2 {
     width: 80%;
     border-radius: 20px;
     box-shadow: 5px 5px 15px black;
+    margin: 0 0 20px 0;
 }
 
 
