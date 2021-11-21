@@ -41,6 +41,7 @@ header div {
     align-items: center;
 }
 
+
 /*navbar*/
 
 .navbar {
@@ -77,7 +78,7 @@ header div {
     border-radius: 7px;
 }
 
-.navbar a:hover {
+/*.navbar a:hover {
     background-color: rgba(146, 133, 133, 0.411);
 }
 
@@ -87,7 +88,7 @@ li a:hover {
 
 .menu a:hover {
     background-color: rgba(146, 133, 133, 0.411);
-}
+}*/
 
 .navbar-menu ul {
     display: flex;
@@ -115,46 +116,14 @@ li a:hover {
     width: 10rem;
 }
 
-/*navbar mobile*/
-
-@media (max-width: 680px) {
-    .menu {
-        display: none;
-    }
-    .navbar-menu {
-        display: flex;  
-    }
-    
-    .navbar-menu li {
-        padding: 10px;
-        margin: 0 50px 0 0;
-        position: relative;
-    }
-    
-    .navbar-menu a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .navbar-menu li ul {
-        display: none;
-        position: absolute;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-    }
-    
-    .navbar-menu li:hover ul {
-        display: block;
-    }
-}
 
 /*home*/
 
 .home {
-    background-image: url(/images/1036497928-huge.jpg);
+    background: url(/images/1036497928-huge.jpg);
     background-size: cover;
     background-attachment: fixed;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -169,13 +138,18 @@ h3 a {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 7rem;
     color: rgb(0, 8, 124);
+    font-weight: 500;
 }
 
 h2 {
     font-size: 3rem;
     color: rgb(0, 8, 124);
+}
+
+.home div {
+    margin-bottom: 7rem;
 }
 
 /*our services*/
@@ -242,6 +216,7 @@ h2 {
 
 .personel p {
     font-size: 20px;
+    margin-top: 30px;
 }
 
 .persolal-img {
@@ -360,12 +335,12 @@ ul {
 
 /*mobile*/
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .about-oss {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px;
+        padding: 5px;
     }
 
     .about-text {
@@ -373,8 +348,14 @@ ul {
         width: 80%;
     }
 
+    h1 {
+        font-size: 3rem;
+        color: rgb(0, 8, 124);
+        font-weight: 500;
+    }
+
     .personel {
-        width: 80%;
+        width: 100%;
         background-color: grey;
     }
 
