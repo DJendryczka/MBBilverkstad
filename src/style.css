@@ -119,18 +119,16 @@ li a:hover {
 
 /*home*/
 
-.home {
-    background: url(/images/1036497928-huge.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
+
+.carousel-inner, .carousel-item {
+    height: 90vh;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
 
 h3 a {
     text-decoration: none;
@@ -141,6 +139,7 @@ h1 {
     font-size: 7rem;
     color: rgb(0, 8, 124);
     font-family: 'Lato', sans-serif;
+    padding-bottom: 280px;
 }
 .splash-title {
 padding-bottom: 80px;
