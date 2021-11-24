@@ -226,10 +226,11 @@ h2 {
 
 .about-text p {
     font-size: 22px;
+    margin: 40px 0 0 0;
 }
 
 .personel {
-    width: 40%;
+    width: 55%;
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
