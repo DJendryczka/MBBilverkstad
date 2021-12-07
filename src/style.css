@@ -393,9 +393,28 @@ button a {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
         color: rgb(0, 8, 124);
         font-weight: 500;
+    }
+
+    .mainmek {
+        padding-bottom: 10px;
+        color: rgb(249, 250, 255);
+        font-size: 3.6rem;
+        
+    }
+
+    .carsplash {
+        padding-bottom: 120px;
+        color: rgb(255, 255, 255);
+        font-size: 3.5rem;
+    }
+
+    .platsplash {
+        padding-bottom: 10px;
+        color: rgb(0, 7, 110);
+        font-size: 3.6rem;
     }
 
     .splash-title {
