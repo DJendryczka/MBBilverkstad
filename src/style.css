@@ -14,12 +14,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h3{
+    font-family: 'Lato', sans-serif;
+}
+
 h4 {
     color: white;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;    
 }
@@ -73,12 +77,13 @@ header div {
     text-decoration: none;
     color: black;
     padding: 12px;
-    font-size: 22px;
+    font-size: 20px;
     transition: 0.5s;
     border-radius: 7px;
+    font-family: 'Lato', sans-serif;
 }
 
-/*.navbar a:hover {
+.navbar a:hover {
     background-color: rgba(146, 133, 133, 0.411);
 }
 
@@ -88,7 +93,7 @@ li a:hover {
 
 .menu a:hover {
     background-color: rgba(146, 133, 133, 0.411);
-}*/
+}
 
 .navbar-menu ul {
     display: flex;
@@ -136,10 +141,11 @@ h3 a {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     color: rgb(3, 15, 192);
     font-family: 'Lato', sans-serif;
-    padding-bottom: 400px;
+    margin-bottom: 30px;
+    padding-bottom: 200px;
 }
 
 .mainmek {
@@ -206,6 +212,10 @@ h2 {
 
 .service-img {
     width: 80%;
+}
+
+.footer-info {
+    padding-top: 30px;
 }
 
 /*about uss*/
@@ -354,6 +364,18 @@ ul {
     transform: scale(1.5);
 }
 
+button {
+    border: none;
+    background: rgb(223, 212, 212);
+    border-radius: 7px;
+    box-shadow: 2px 8px 10px rgb(139, 139, 143);
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /*mobile*/
 
@@ -417,6 +439,10 @@ ul {
 
     .logo {
         margin-left: 5px;
+    }
+
+    .skill-description p {
+        font-size: 1.8rem;
     }
     
 }
