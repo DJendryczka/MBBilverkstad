@@ -14,8 +14,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h3{
-    font-family: 'Lato', sans-serif;
+.h3{
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    margin-top: 20px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 20px;
 }
 
 h4 {
@@ -35,7 +41,9 @@ header {
     height: 40px;
     color: white;
     display: flex;
+    justify-content: space-around;
     font-size:18px;
+    
 }
 
 header div {
@@ -45,8 +53,16 @@ header div {
     align-items: center;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /*navbar*/
+nav {
+    box-shadow: 0px 5px 16px black;
+}
 
 .navbar {
     height: 60px;
@@ -70,21 +86,26 @@ header div {
     padding: 12px;
     font-size: 22px;
     transition: 0.5s;
-    border-radius: 7px;
+    border-radius: 7px
+    
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-    padding: 12px;
+    padding: 5px;
+    margin: 0 8px 0 8px;
     font-size: 20px;
     transition: 0.5s;
     border-radius: 7px;
     font-family: 'Lato', sans-serif;
+    box-shadow: 0px 6px 20px rgb(0, 0, 0);
+
 }
 
 .navbar a:hover {
     background-color: rgba(146, 133, 133, 0.411);
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
 }
 
 li a:hover {
@@ -115,11 +136,13 @@ li a:hover {
 
 .logo {
     margin-left: 40px;
+    box-shadow: 0px 6px 20px rgb(0, 0, 0);
 }
 
 .logo-img {
     width: 10rem;
 }
+
 
 
 /*home*/
@@ -204,7 +227,7 @@ h2 {
     width: 320px;
     height: 550px;
     border-radius: 15px;
-    box-shadow: 6px 6px 20px rgb(0, 0, 0);
+    box-shadow: 0px 6px 20px rgb(0, 0, 0);
     margin: 90px 20px;
     padding: 20px;
     text-align: center;
@@ -212,6 +235,8 @@ h2 {
 
 .service-img {
     width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgb(0, 0, 0);
 }
 
 .footer-info {
@@ -393,9 +418,28 @@ button a {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
         color: rgb(0, 8, 124);
         font-weight: 500;
+    }
+
+    .mainmek {
+        padding-bottom: 10px;
+        color: rgb(249, 250, 255);
+        font-size: 3.6rem;
+        
+    }
+
+    .carsplash {
+        padding-bottom: 120px;
+        color: rgb(255, 255, 255);
+        font-size: 3.5rem;
+    }
+
+    .platsplash {
+        padding-bottom: 10px;
+        color: rgb(0, 7, 110);
+        font-size: 3.6rem;
     }
 
     .splash-title {
@@ -444,5 +488,13 @@ button a {
     .skill-description p {
         font-size: 1.8rem;
     }
+
+    .nav-link.active {
+        margin-top: 40px;
+        padding: 8px;
+        width: 180px;
+        background: rgba(255, 255, 255, 0.521);
+    }
+    
     
 }
